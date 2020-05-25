@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CvikZobrazenie"
+    android:background="@color/cierna"
+    >
+
+    <TextView
+        android:id="@+id/nazovCvik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/textview"
+        android:textSize="40sp"
+        android:textColor="@color/tmavoZelena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/popisCviku"
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="12dp"
+        android:textSize="15sp"
+        android:background="@drawable/zaobleniesvetle"
+        android:textColor="@color/cierna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/casPrestavka" />
+
+    <TextView
+        android:id="@+id/serieCvikov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/po_et_s_ri"
+        android:textSize="25sp"
+        android:textColor="@color/svetloZelena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nazovCvik" />
+
+    <TextView
+        android:id="@+id/opakovanieCvikov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/po_et_opakovan"
+        android:textSize="25sp"
+        android:textColor="@color/svetloZelena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serieCvikov" />
+
+    <TextView
+        android:id="@+id/casCvikov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/prest_vka"
+        android:textSize="25sp"
+        android:textColor="@color/svetloZelena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opakovanieCvikov" />
+
+    <TextView
+        android:id="@+id/pocetSerii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/_0"
+        android:textSize="25sp"
+        android:textColor="@color/tmavoZelena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nazovCvik" />
+
+    <TextView
+        android:id="@+id/pocetOpakovani"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/_0"
+        android:textSize="25sp"
+        android:textColor="@color/tmavoZelena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pocetSerii" />
+
+    <TextView
+        android:id="@+id/casPrestavka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/_0_sec"
+        android:textSize="25sp"
+        android:textColor="@color/tmavoZelena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pocetOpakovani" />
+
+    <Button
+        android:id="@+id/delCvikIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/zaoblenie"
+        android:textColor="@color/cierna"
+        android:text="@string/delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popisCviku" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
